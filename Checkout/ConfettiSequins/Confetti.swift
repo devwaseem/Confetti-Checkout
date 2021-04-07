@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class Confetti: Identifiable {
+class Confetti: Identifiable, Particle {
         
     var id = UUID()
     let color: ConfettiColor
@@ -48,7 +48,7 @@ class Confetti: Identifiable {
         force.add(vector: gravity)
         
         let randomWind = CGFloat.random(in: 0 ..< 0.2)
-        let randomHorizontalWind = Vector2D(x: CGFloat.random(in: 0 ..< 1) > 0.5 ? randomWind : -randomWind, y: 0)
+        let randomHorizontalWind = Vector2D(x: CGFloat.random(in: 1 ..< 100) > 50 ? randomWind : -randomWind, y: 0)
         force.add(vector: randomHorizontalWind)
         velocity.add(vector: force)
         if(velocity.y > -4) {

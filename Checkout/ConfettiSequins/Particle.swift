@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol Particle {
+    func update()
+    func isOutOfBoundary() -> Bool
+}

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CheckoutApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(
+                checkoutViewModel: CheckoutViewModel(), confettiSequinDriver: ConfettiSequinDriver()
+            )
         }
     }
 }

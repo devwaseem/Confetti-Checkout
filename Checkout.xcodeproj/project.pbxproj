@@ -7,19 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752EB21B261E000C004A58AF /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752EB21A261E000C004A58AF /* CheckoutViewModel.swift */; };
 		7565AEE7261CBFD900B9F52C /* CheckoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AEE6261CBFD900B9F52C /* CheckoutApp.swift */; };
 		7565AEE9261CBFD900B9F52C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AEE8261CBFD900B9F52C /* ContentView.swift */; };
 		7565AEEB261CBFDB00B9F52C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7565AEEA261CBFDB00B9F52C /* Assets.xcassets */; };
 		7565AEEE261CBFDB00B9F52C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7565AEED261CBFDB00B9F52C /* Preview Assets.xcassets */; };
+		7565AEF8261CE68F00B9F52C /* Gilroy-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7565AEF7261CE68F00B9F52C /* Gilroy-Regular.otf */; };
+		7565AEFB261CE71400B9F52C /* Gilroy-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7565AEFA261CE71400B9F52C /* Gilroy-SemiBold.otf */; };
+		7565AEFE261CE73400B9F52C /* Gilroy-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7565AEFD261CE73400B9F52C /* Gilroy-Bold.otf */; };
+		7565AF01261CE76900B9F52C /* Gilroy-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7565AF00261CE76900B9F52C /* Gilroy-Medium.otf */; };
+		7565AF05261CECB100B9F52C /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AF04261CECB100B9F52C /* Confetti.swift */; };
+		7565AF08261CECC100B9F52C /* ConfettiColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AF07261CECC100B9F52C /* ConfettiColors.swift */; };
+		7565AF0B261CED1E00B9F52C /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AF0A261CED1E00B9F52C /* ConfettiView.swift */; };
+		7565AF0F261CED5C00B9F52C /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AF0E261CED5C00B9F52C /* Vector2D.swift */; };
+		7565AF12261CED6400B9F52C /* ConfettiSequinDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565AF11261CED6400B9F52C /* ConfettiSequinDriver.swift */; };
+		75946C07261E147200238414 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75946C06261E147200238414 /* LoadingView.swift */; };
+		75946C0B261E2ED300238414 /* Sequins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75946C0A261E2ED300238414 /* Sequins.swift */; };
+		75A95EF2261E30A80055844C /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A95EF1261E30A80055844C /* Particle.swift */; };
+		75A95EF5261E32600055844C /* SequinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A95EF4261E32600055844C /* SequinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		752EB21A261E000C004A58AF /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
 		7565AEE3261CBFD900B9F52C /* Checkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7565AEE6261CBFD900B9F52C /* CheckoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutApp.swift; sourceTree = "<group>"; };
 		7565AEE8261CBFD900B9F52C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7565AEEA261CBFDB00B9F52C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7565AEED261CBFDB00B9F52C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7565AEEF261CBFDB00B9F52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7565AEF7261CE68F00B9F52C /* Gilroy-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.otf"; sourceTree = "<group>"; };
+		7565AEFA261CE71400B9F52C /* Gilroy-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.otf"; sourceTree = "<group>"; };
+		7565AEFD261CE73400B9F52C /* Gilroy-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.otf"; sourceTree = "<group>"; };
+		7565AF00261CE76900B9F52C /* Gilroy-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.otf"; sourceTree = "<group>"; };
+		7565AF04261CECB100B9F52C /* Confetti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
+		7565AF07261CECC100B9F52C /* ConfettiColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiColors.swift; sourceTree = "<group>"; };
+		7565AF0A261CED1E00B9F52C /* ConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		7565AF0E261CED5C00B9F52C /* Vector2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		7565AF11261CED6400B9F52C /* ConfettiSequinDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfettiSequinDriver.swift; sourceTree = "<group>"; };
+		75946C06261E147200238414 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		75946C0A261E2ED300238414 /* Sequins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequins.swift; sourceTree = "<group>"; };
+		75A95EF1261E30A80055844C /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		75A95EF4261E32600055844C /* SequinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +80,16 @@
 		7565AEE5261CBFD900B9F52C /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
+				7565AF0D261CED4F00B9F52C /* Helpers */,
+				7565AF03261CEC8500B9F52C /* ConfettiSequins */,
+				7565AEF6261CE67800B9F52C /* Fonts */,
 				7565AEE6261CBFD900B9F52C /* CheckoutApp.swift */,
 				7565AEE8261CBFD900B9F52C /* ContentView.swift */,
 				7565AEEA261CBFDB00B9F52C /* Assets.xcassets */,
 				7565AEEF261CBFDB00B9F52C /* Info.plist */,
 				7565AEEC261CBFDB00B9F52C /* Preview Content */,
+				752EB21A261E000C004A58AF /* CheckoutViewModel.swift */,
+				75946C06261E147200238414 /* LoadingView.swift */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";
@@ -67,6 +100,39 @@
 				7565AEED261CBFDB00B9F52C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7565AEF6261CE67800B9F52C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7565AF00261CE76900B9F52C /* Gilroy-Medium.otf */,
+				7565AEFD261CE73400B9F52C /* Gilroy-Bold.otf */,
+				7565AEF7261CE68F00B9F52C /* Gilroy-Regular.otf */,
+				7565AEFA261CE71400B9F52C /* Gilroy-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7565AF03261CEC8500B9F52C /* ConfettiSequins */ = {
+			isa = PBXGroup;
+			children = (
+				7565AF11261CED6400B9F52C /* ConfettiSequinDriver.swift */,
+				7565AF04261CECB100B9F52C /* Confetti.swift */,
+				7565AF07261CECC100B9F52C /* ConfettiColors.swift */,
+				7565AF0A261CED1E00B9F52C /* ConfettiView.swift */,
+				75946C0A261E2ED300238414 /* Sequins.swift */,
+				75A95EF1261E30A80055844C /* Particle.swift */,
+				75A95EF4261E32600055844C /* SequinView.swift */,
+			);
+			path = ConfettiSequins;
+			sourceTree = "<group>";
+		};
+		7565AF0D261CED4F00B9F52C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7565AF0E261CED5C00B9F52C /* Vector2D.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7565AEFB261CE71400B9F52C /* Gilroy-SemiBold.otf in Resources */,
+				7565AEF8261CE68F00B9F52C /* Gilroy-Regular.otf in Resources */,
+				7565AEFE261CE73400B9F52C /* Gilroy-Bold.otf in Resources */,
 				7565AEEE261CBFDB00B9F52C /* Preview Assets.xcassets in Resources */,
+				7565AF01261CE76900B9F52C /* Gilroy-Medium.otf in Resources */,
 				7565AEEB261CBFDB00B9F52C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7565AF12261CED6400B9F52C /* ConfettiSequinDriver.swift in Sources */,
 				7565AEE9261CBFD900B9F52C /* ContentView.swift in Sources */,
+				7565AF08261CECC100B9F52C /* ConfettiColors.swift in Sources */,
+				7565AF05261CECB100B9F52C /* Confetti.swift in Sources */,
+				752EB21B261E000C004A58AF /* CheckoutViewModel.swift in Sources */,
+				75A95EF2261E30A80055844C /* Particle.swift in Sources */,
+				7565AF0B261CED1E00B9F52C /* ConfettiView.swift in Sources */,
+				75A95EF5261E32600055844C /* SequinView.swift in Sources */,
+				7565AF0F261CED5C00B9F52C /* Vector2D.swift in Sources */,
 				7565AEE7261CBFD900B9F52C /* CheckoutApp.swift in Sources */,
+				75946C0B261E2ED300238414 /* Sequins.swift in Sources */,
+				75946C07261E147200238414 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Checkout/Preview Content\"";
+				DEVELOPMENT_TEAM = Z43AQF953J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Checkout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Checkout/Preview Content\"";
+				DEVELOPMENT_TEAM = Z43AQF953J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Checkout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

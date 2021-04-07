@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct SequinView: View {
+    
+    var x: CGFloat
+    var y: CGFloat
+    var color: Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 0){
+            Circle()
+                .fill(color)
+        }
+        .frame(width: 5, height: 5)
+        .position(x: x, y: y)
+        .animation(.linear)
     }
-}
-
-struct SequinView_Previews: PreviewProvider {
-    static var previews: some View {
-        SequinView()
-    }
+    
 }

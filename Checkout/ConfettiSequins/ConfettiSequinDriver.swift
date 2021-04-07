@@ -12,7 +12,7 @@ import SwiftUI
 class ConfettiSequinDriver: ObservableObject {
     
     @Published var confetties = [Confetti]()
-    
+    @Published var sequins = [Sequins]()
     
     var confettiCount = 40
     var sequinCount = 40
@@ -44,6 +44,7 @@ class ConfettiSequinDriver: ObservableObject {
         if Int.random(in: 0...100) < 20 {
             velocityY *= 1.2
         }
+            
         return Confetti(
             size: CGSize(width: CGFloat.random(in: 6 ... 12), height: CGFloat.random(in: 15...30)),
             position: Vector2D(cgPoint: CGPoint(x: CGFloat.random(in: emitterFrame.minX ... emitterFrame.maxX), y: emitterFrame.minY)),
@@ -58,24 +59,55 @@ class ConfettiSequinDriver: ObservableObject {
         )
     }
     
+    func makeSequins() -> Sequins {
+        let velocityX = CGFloat.random(in: -1 ... 1)
+        var velocityY: CGFloat = CGFloat.random(in: 10...15)
+        if Int.random(in: 0...100) < 50 {
+            velocityY *= 1.2
+        }
+        return Sequins(
+            position: Vector2D(cgPoint: CGPoint(x: CGFloat.random(in: emitterFrame.minX ... emitterFrame.maxX), y: emitterFrame.minY)),
+            initialVelocity: Vector2D(
+                x: velocityX,
+                y: -velocityY
+            ),
+            yBoundary: systemSize.height + 50,
+            terminalVelocity: 10,
+            color: confettiColors[Int.random(in: 0..<confettiColors.count)]
+        )
+    }
+    
     
    
     
     func blowConfetti() {
-        //start displaylink
+        
         for _ in 0 ..< confettiCount {
-            let confetti = makeConfetti()
             confetties.append(
-                confetti
+                makeConfetti()
             )
         }
+        
+        for _ in 0 ..< sequinCount {
+            sequins.append(
+                makeSequins()
+            )
+        }
+
+        //start displaylink
         displayLink?.isPaused = false
     }
-    
+        
+    private func filterInsideBoundary(particle: Particle) -> Bool {
+        return !particle.isOutOfBoundary()
+    }
     
     @objc func update(displayLink: CADisplayLink){
-        confetties.forEach { $0.update() }
-        confetties = confetties.filter { !$0.isOutOfBoundary() }
+        
+        let particles: [[Particle]] = [confetties, sequins]
+        particles.flatMap { $0 }.forEach { $0.update() }
+        confetties = confetties.filter(filterInsideBoundary)
+        sequins = sequins.filter(filterInsideBoundary)
         //pause the update when all confetties are out of the screen, to prevent the performance.
         if confetties.count == 0 {
             displayLink.isPaused = true
